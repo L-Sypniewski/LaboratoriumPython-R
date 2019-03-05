@@ -1,5 +1,3 @@
-
-
 class osoba:
     '''Przykładowa klasa'''
 
@@ -37,7 +35,6 @@ class pracownik(osoba):
         print("{} {} zarabia {} PLN na stanowisku {}.".format(self.imie, self.nazwisko, self.pensja,
                                                               str(self.stanowiska[-1])))
 
-
 ##########   Rozwiazanie   ###########################################
 
 class pracownicy:
@@ -60,7 +57,6 @@ class pracownicy:
             dane_pracownikow = self.__dane_pracownikow(pracownicy_kiedykolwiek_na_stanowisku)
 
             self.__wyprintuj_rezultat("Pracownicy kiedykolwiek na stanowisku", stanowisko, dane_pracownikow)
-
         else:
             pracownicy_obecnie_na_stanowisku = list(
                 filter(lambda p: p.stanowiska[-1] == stanowisko, self.pracownicy))
